@@ -245,8 +245,7 @@ Password: <decoded-password>
 
 ### code checkout
 
-```
-pipeline {
+```pipeline {
     agent any
 
     stages {
@@ -254,7 +253,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
     }
@@ -276,7 +275,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
 
@@ -315,7 +314,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
 
@@ -363,7 +362,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
 
@@ -429,7 +428,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
 
@@ -500,7 +499,7 @@ pipeline {
         PATH = "/opt/sonar-scanner/bin:${PATH}"
         ECR_REPO = '128913199644.dkr.ecr.us-east-1.amazonaws.com/myecrrepo'
         AWS_REGION = 'us-east-1'
-        DEPLOYMENT_REPO = 'https://github.com/Reshufowzi/deployment-repo.git'
+        DEPLOYMENT_REPO = 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
     }
 
     stages {
@@ -509,7 +508,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-cred',
-                    url: 'https://github.com/Reshufowzi/application-code.git'
+                    url: 'https://github.com/PradeepKumar21-aws/CD-CI-PROJECT.git'
             }
         }
 
